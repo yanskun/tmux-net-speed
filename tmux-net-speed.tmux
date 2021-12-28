@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
 source "$CURRENT_DIR/scripts/helpers.sh"
 
 interpolation=(
@@ -9,7 +8,7 @@ interpolation=(
 )
 
 commands=(
-  "#($CURRENT_DIR/scripts/upload.sh)"
+  "$CURRENT_DIR/scripts/upload.sh"
 )
 
 set_tmux_option() {
